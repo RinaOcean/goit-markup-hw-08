@@ -17,6 +17,10 @@ body {
   color: $main-text-color;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   padding: 0px;

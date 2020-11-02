@@ -21,7 +21,7 @@
           <span class="logo-web">Web</span><span class="logo-studio-dark">Studio</span>
         </a>
 
-        <button class="header-menu-button" type="button" data-menu-button>
+        <button type="button" class="header-menu-button" aria-expanded="false" data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-icon"></use>
             <use class="icon-cross" href="./images/symbol-defs.svg#icon-burger-close"></use>
@@ -116,9 +116,8 @@
                 </label>
               </div>
 
-              <label for="comment" class="form-field">
-                Комментарий
-                <textarea
+              <label for="comment" class="form-field"
+                >Комментарий<textarea
                   name="comment"
                   class="comment-field"
                   id="comment"
@@ -134,8 +133,7 @@
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
 
-                Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="agreement-terms link"> Условия договора</a>
+                Соглашаюсь с рассылкой и принимаю<a href="#" class="agreement-terms link"> Условия договора</a>
               </label>
 
               <button type="submit" class="submit-button">Отправить</button>

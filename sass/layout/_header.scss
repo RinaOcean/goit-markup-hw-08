@@ -24,14 +24,23 @@
   border-style: none;
   background: white;
 
+  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.menu-icon {
-  width: 40px;
-  height: 40px;
+.header-menu-button .icon-cross {
+  display: none;
+}
+
+.header-menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.header-menu-button.is-open .icon-menu {
+  display: none;
 }
 
 /*.address-navigation-wrapper {

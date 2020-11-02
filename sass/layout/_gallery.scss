@@ -1,11 +1,10 @@
 .gallery {
-  display: none;
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   &-label {
     @include font(900, 14px, 16px, 0.03em);

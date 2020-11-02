@@ -221,23 +221,6 @@ h3 {
   }
 }
 
-.address-list-link {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .address-list-link {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address-list-link {
-    text-align: left;
-  }
-}
-
 .address-list-link:hover, .address-list-link:focus {
   color: #2196f3;
 }
@@ -277,6 +260,22 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.page-header .address-list-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer .address-list-link {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .address-list-link {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer .address-list-item:not(:first-child) {
     margin-top: 9px;
@@ -297,13 +296,45 @@ h3 {
 .phone-icon {
   width: 10px;
   min-width: 10px;
-  height: 16px;
+  height: 15px;
+}
+
+@media screen and (min-width: 768) {
+  .phone-icon {
+    width: 10px;
+    min-width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .phone-icon {
+    width: 10px;
+    min-width: 10px;
+    height: 16px;
+  }
 }
 
 .mail-icon {
   width: 16px;
   min-width: 16px;
-  height: 12px;
+  height: 11px;
+}
+
+@media screen and (min-width: 768) {
+  .mail-icon {
+    width: 14px;
+    min-width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .mail-icon {
+    width: 16px;
+    min-width: 16px;
+    height: 10px;
+  }
 }
 
 .page-header .navigation {

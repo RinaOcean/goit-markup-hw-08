@@ -1,0 +1,36 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #2f303a;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 468px) {
+  }
+
+  @media screen and (min-width: 468px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &-title {
+    text-align: center;
+    font-family: $main-font;
+    font-style: normal;
+    @include font(900, 26px, 42px, 0.06em);
+    text-transform: uppercase;
+    color: $dark-theme-color;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      @include font(900, 44px, 60px, 0.06em);
+    }
+  }
+}

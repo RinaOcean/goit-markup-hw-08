@@ -1,0 +1,8 @@
+%flex-sbtwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+%transition {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,60 @@
+.staff {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &-name {
+    @include font(500, 16px, 19px, 0.03em);
+    color: $secondary-text-color;
+    margin-top: 30px;
+  }
+
+  &-proffession {
+    @include font(400, 16px, 19px, 0.03em);
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  &-photo {
+    @media screen and (max-width: 767px) {
+      display: inline;
+      width: 100%;
+    }
+  }
+}
+
+.staff-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.staff-list-item {
+  text-align: center;
+  padding-bottom: 30px;
+
+  background-color: $dark-theme-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+}

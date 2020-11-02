@@ -1,0 +1,84 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
+
+  &-logo {
+    fill: currentColor;
+  }
+}
+
+.clients-list-item {
+  margin: 15px;
+
+  flex-basis: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-basis: calc((100% - 4 * 15px) / 2);
+  height: 90px;
+
+  border: 1px solid $icons-color;
+  color: $icons-color;
+  border-radius: 4px;
+  @extend %transition;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.logo-1 {
+  @include box(44px, 49px);
+}
+
+.logo-2 {
+  @include box(40px, 52px);
+}
+
+.logo-3 {
+  @include box(41px, 43px);
+}
+
+.logo-4 {
+  @include box(80px, 42px);
+}
+
+.logo-5 {
+  @include box(59px, 47px);
+}
+
+.logo-6 {
+  @include box(88px, 45px);
+}

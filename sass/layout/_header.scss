@@ -1,0 +1,44 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $dark-theme-color;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.header-menu-button {
+  display: flex;
+
+  border-style: none;
+  background: white;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/*.address-navigation-wrapper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}*/

@@ -1,0 +1,36 @@
+.page-header .navigation {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.page-header .navigation-list {
+  display: flex;
+
+  /* @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }*/
+}
+
+.navigation-list-link {
+  display: block;
+  color: $secondary-text-color;
+  @include font(500, 14px, 16px, 0.02em);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    @extend %transition;
+  }
+}
+
+.page-header .navigation-list-item + .navigation-list-item {
+  margin-left: 50px;
+}

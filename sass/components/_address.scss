@@ -1,0 +1,106 @@
+.address {
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 14px;
+
+  .page-header & {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      /* margin-left: 84px;*/
+    }
+  }
+
+  .footer & {
+    margin-top: 20px;
+  }
+
+  &-list {
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      @extend %transition;
+    }
+
+    .footer & {
+      display: block;
+    }
+  }
+
+  &-list-item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-list-link {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      @extend %transition;
+    }
+  }
+
+  &-light-theme {
+    @include font(500, 18px, 21px, 0.02em);
+
+    @media screen and (min-width: 768px) {
+      @include font(500, 12px, 14px, 0.02em);
+      color: $main-text-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include font(500, 14px, 16px, 0.02em);
+      color: $main-text-color;
+    }
+  }
+
+  &-dark-theme {
+    @include font(400, 14px, 24px, 0.03em);
+    color: $dark-theme-secondary-color;
+  }
+}
+
+.footer .address-list-item:not(:first-child) {
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
+}
+
+.page-header .address-list-item + .address-list-item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone-icon {
+  @include box(10px, 16px);
+}
+
+.mail-icon {
+  @include box(16px, 12px);
+}

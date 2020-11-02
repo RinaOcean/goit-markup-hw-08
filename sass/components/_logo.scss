@@ -1,0 +1,23 @@
+.logo {
+  font-family: $secondary-font;
+  font-style: normal;
+  @include font(700, 24px, 28px, 0.03em);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 31px, 0.03em);
+    text-align: left;
+  }
+
+  &-web {
+    color: $accent-color;
+  }
+
+  &-studio-dark {
+    color: $dark-logo-color;
+  }
+
+  &-studio-light {
+    color: $dark-theme-color;
+  }
+}

@@ -1,0 +1,93 @@
+.advantages {
+  padding-top: 60px;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+
+  &-list-title {
+    @include font(700, 14px, 16px, 0.03em);
+
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 120px;
+
+      margin-bottom: 30px;
+
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
+    }
+  }
+
+  &-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
+  &-list-description {
+    @include font(400, 14px, 24px, 0.03em);
+  }
+
+  &-list-item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+    }
+  }
+
+  &-list-item:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.advantages-list {
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+  }
+}
+
+.details::before {
+  background-image: url("../images/Advantages/antenna.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.punctuality::before {
+  background-image: url("../images/Advantages/clock.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.planning::before {
+  background-image: url("../images/Advantages/diagram.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.technologies::before {
+  background-image: url("../images/Advantages/astronaut.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}

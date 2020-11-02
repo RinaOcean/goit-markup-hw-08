@@ -1,0 +1,38 @@
+.gallery {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-label {
+    @include font(900, 14px, 16px, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &-list {
+    display: flex;
+    margin: -15px;
+
+    &-item {
+      position: relative;
+      margin: 15px;
+    }
+  }
+}
+
+.text-wrapper {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include box(100%, 70px);
+
+  background: rgba(47, 48, 58, 0.8);
+}

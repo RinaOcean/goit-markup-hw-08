@@ -2,15 +2,19 @@
   position: relative;
   color: $accent-color;
 
+  display: inline-block;
+
   &::after {
     content: "";
 
     position: absolute;
     display: block;
-    @include box(100%, 4px);
-    bottom: -32px;
-
     background-color: $accent-color;
     border-radius: 2px;
+    bottom: -12px;
+    @include box(100%, 4px);
+    @media screen and (min-width: 768px) {
+      bottom: -32px;
+    }
   }
 }

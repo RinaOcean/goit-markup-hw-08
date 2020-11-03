@@ -1,27 +1,31 @@
 .page-header .navigation {
-  display: none;
-
+  @include font(500, 18px, 21px, 0.02em);
   @media screen and (min-width: 768px) {
-    display: block;
+    @include font(500, 14px, 16px, 0.02em);
   }
 }
 
 .page-header .navigation-list {
-  display: flex;
-
-  /* @media screen and (min-width: 768px) {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }*/
+    /* margin-left: 93px;*/
+  }
+}
+
+.navigation-list-item:first-child {
+  margin-bottom: 52px;
+}
+.navigation-list-item:last-child {
+  margin-top: 40px;
 }
 
 .navigation-list-link {
   display: block;
   color: $secondary-text-color;
-  @include font(500, 14px, 16px, 0.02em);
-
   cursor: pointer;
 
   &:hover,
@@ -32,5 +36,7 @@
 }
 
 .page-header .navigation-list-item + .navigation-list-item {
-  margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
 }

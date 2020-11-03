@@ -8,6 +8,11 @@
 
     @media screen and (min-width: 768px) {
       @include font(500, 11px, 14px, 0.02em);
+      margin-left: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 305px;
     }
   }
 
@@ -20,7 +25,6 @@
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      align-items: center;
     }
 
     &:hover,
@@ -36,7 +40,10 @@
   }
 
   &-list-item:not(:last-child) {
-    margin-bottom: 16px;
+    @media screen and (max-width: 767) {
+      margin-bottom: 16px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
     }
@@ -76,7 +83,7 @@
 
 .page-header .address-list-item + .address-list-item {
   @media screen and (min-width: 1200px) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 

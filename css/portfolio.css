@@ -33,9 +33,16 @@ img {
 }
 
 body {
+  padding-top: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 body.modal-open {
@@ -542,8 +549,11 @@ h3 {
 }
 
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
-  position: relative;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 10px;

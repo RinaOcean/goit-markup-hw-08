@@ -1,13 +1,15 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
-  position: relative;
+
+  width: 100%;
+
   border-bottom: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: $dark-theme-color;
-
-  @media screen and (min-width: 480px) {
-  }
 
   @media screen and (min-width: 768px) {
     padding-top: 21px;

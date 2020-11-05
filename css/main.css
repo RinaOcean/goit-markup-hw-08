@@ -660,14 +660,18 @@ h3 {
 }
 
 .agreement-terms-label {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: flex;
   margin-top: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) {
+  .agreement-terms-label {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -678,6 +682,20 @@ h3 {
     letter-spacing: 0.03em;
     padding: 0 12px;
     text-align: end;
+  }
+}
+
+.agreement-wrapper {
+  margin: 0 auto;
+}
+
+.agree {
+  display: flex;
+}
+
+@media screen and (max-width: 479px) {
+  .agree {
+    flex-wrap: wrap;
   }
 }
 

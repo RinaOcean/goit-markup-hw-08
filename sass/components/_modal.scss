@@ -163,19 +163,34 @@
   cursor: pointer;
 
   &-label {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: flex;
+    @media screen and (max-width: 479px) {
+    }
 
     margin-top: 20px;
 
     @include font(400, 12px, 14px, 0.03em);
+
+    @media screen and (min-width: 480px) {
+      align-items: center;
+    }
 
     @media screen and (min-width: 1200px) {
       @include font(400, 14px, 24px, 0.03em);
       padding: 0 12px;
       text-align: end;
     }
+  }
+}
+
+.agreement-wrapper {
+  margin: 0 auto;
+}
+
+.agree {
+  display: flex;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
   }
 }
 

@@ -512,12 +512,13 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .modal {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
     width: 450px;
     min-width: 450px;
     height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

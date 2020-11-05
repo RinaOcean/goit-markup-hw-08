@@ -388,7 +388,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation-list-item:first-child {
     margin-bottom: 52px;
   }
@@ -398,7 +398,7 @@ h3 {
 }
 
 .navigation-list-link {
-  display: block;
+  display: inline-block;
   color: #212121;
   cursor: pointer;
 }
@@ -1166,21 +1166,16 @@ h3 {
   justify-content: center;
   flex-basis: calc((100% - 4 * 15px) / 2);
   height: 90px;
+  width: 100%;
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list-link {
+  /* @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list-link {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 12 * 15px) / 6);
-  }
+  }*/
 }
 
 .clients-list-link:hover, .clients-list-link:focus {

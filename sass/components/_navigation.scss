@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation-list-item:first-child {
     margin-bottom: 52px;
   }
@@ -28,7 +28,7 @@
 }
 
 .navigation-list-link {
-  display: block;
+  display: inline-block;
   color: $secondary-text-color;
   cursor: pointer;
 

@@ -39,18 +39,19 @@
 
   flex-basis: calc((100% - 4 * 15px) / 2);
   height: 90px;
+  width: 100%;
 
   border: 1px solid $icons-color;
   color: $icons-color;
   border-radius: 4px;
   @extend %transition;
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 12 * 15px) / 6);
-  }
+  }*/
 
   &:hover,
   &:focus {

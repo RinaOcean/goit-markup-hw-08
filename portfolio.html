@@ -17,48 +17,52 @@
 
     <header class="page-header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo link logo-light-theme" href="./index.html" aria-label="логотип Веб Студии">
-            <span class="logo-web">Web</span><span class="logo-studio-dark">Studio</span>
-          </a>
-        </nav>
+        <a class="logo link logo-light-theme" href="./index.html" aria-label="логотип Веб Студии">
+          <span class="logo-web">Web</span><span class="logo-studio-dark">Studio</span>
+        </a>
 
-        <nav class="navigation">
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./index.html">Студия</a>
-            </li>
+        <button type="button" class="header-menu-button" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-icon"></use>
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./index.html"> Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link link-current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link link-current" href="./portfolio.html">Портфолио</a>
-            </li>
-
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a class="address-list-link link address-light-theme" href="mailto:info@devstudio.com">
-                <svg class="contacts-icon mail-icon">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="address-list-item">
-              <a class="address-list-link link address-light-theme" href="tel:+380961111111">
-                <svg class="contacts-icon phone-icon">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-list-item">
+                <a class="address-list-link link address-light-theme" href="mailto:info@devstudio.com">
+                  <svg class="contacts-icon mail-icon">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link link address-light-theme" href="tel:+380961111111">
+                  <svg class="contacts-icon phone-icon">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -66,239 +70,219 @@
       <!--PORTFOLIO-->
 
       <section class="portfolio">
-        <h2 hidden>Галлерея работ</h2>
-
-        <div class="work-gallery">
+        <h2 class="visually-hidden">Галлерея работ</h2>
+        <div class="container">
           <div class="filter">
             <ul class="filter-list list">
-              <li>
+              <li class="filter-list-item">
                 <button class="filter-button" type="button">Все</button>
               </li>
-              <li>
+
+              <li class="filter-list-item">
                 <button class="filter-button" type="button">Веб-сайты</button>
               </li>
-              <li>
+
+              <li class="filter-list-item">
                 <button class="filter-button" type="button">Приложения</button>
               </li>
-              <li>
+
+              <li class="filter-list-item">
                 <button class="filter-button" type="button">Дизайн</button>
               </li>
-              <li>
+
+              <li class="filter-list-item">
                 <button class="filter-button" type="button">Маркетинг</button>
               </li>
             </ul>
           </div>
+          <div class="portfolio-gallery">
+            <ul class="portfolio-list list">
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/site.jpg"
+                      alt="страница вебсайта на мониторе лаптопа"
+                    />
 
-          <ul class="work-list list container">
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/site.jpg"
-                    alt="страница вебсайта на мониторе лаптопа"
-                    width="370"
-                    height="294"
-                  />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Технокряк</h3>
+                    <p class="work-type">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
 
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="work-card">
-                  <h3 class="work-name">Технокряк</h3>
-                  <p class="work-type">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/basketball.jpg"
+                      alt="двое мужчин играют в баскетбол"
+                    />
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/basketball.jpg"
-                    alt="двое мужчин играют в баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="work-type">Дизайн</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                  <p class="work-type">Дизайн</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/restaurant-logo.jpg"
+                      alt="логотип ресторана Seafood"
+                    />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/restaurant-logo.jpg"
-                    alt="логотип ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="work-type">Приложение</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Ресторан <span lang="en">Seafood</span></h3>
-                  <p class="work-type">Приложение</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/headphones.jpg"
+                      alt="черные наушники накладные"
+                    />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/headphones.jpg"
-                    alt="черные наушники накладные"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Проект <span lang="en">Prime</span></h3>
+                    <p class="work-type">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Проект <span lang="en">Prime</span></h3>
-                  <p class="work-type">Маркетинг</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/boxes.jpg"
+                      alt="две картонные коробки на светлом фоне"
+                    />
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/boxes.jpg"
-                    alt="две картонные коробки на светлом фоне"
-                    width="370"
-                    height="294"
-                  />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Проект <span lang="en">Boxes</span></h3>
+                    <p class="work-type">Приложение</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Проект <span lang="en">Boxes</span></h3>
-                  <p class="work-type">Приложение</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/monitor.jpg"
+                      alt="вебсайт на экране монитора моноблока"
+                    />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/monitor.jpg"
-                    alt="вебсайт на экране монитора моноблока"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 lang="en" class="work-name">Inspiration has no Bordersа</h3>
+                    <p class="work-type">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 lang="en" class="work-name">Inspiration has no Bordersа</h3>
-                  <p class="work-type">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img class="work-photo" src="./images/work-samples/book.jpg" alt="журнал Limited Edition" />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/book.jpg"
-                    alt="журнал Limited Edition"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Издание <span lang="en">Limited Edition</span></h3>
+                    <p class="work-type">Дизайн</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Издание <span lang="en">Limited Edition</span></h3>
-                  <p class="work-type">Дизайн</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img class="work-photo" src="./images/work-samples/label.jpg" alt="белая бирка с веревочкой" />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/label.jpg"
-                    alt="белая бирка с веревочкой"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
+                  <div class="work-card">
+                    <h3 class="work-name">Проект <span lang="en">LAB</span></h3>
+                    <p class="work-type">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
 
-                <div class="work-card">
-                  <h3 class="work-name">Проект <span lang="en">LAB</span></h3>
-                  <p class="work-type">Маркетинг</p>
-                </div>
-              </a>
-            </li>
+              <li class="portfolio-list-item">
+                <a class="link work-list-link" href="">
+                  <div class="image-wrapper">
+                    <img
+                      class="work-photo"
+                      src="./images/work-samples/laptop.jpg"
+                      alt="разрабатывает приложение на лаптопе"
+                      width="370"
+                      height="294"
+                    />
+                    <p class="work-list-description">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
 
-            <li class="work-list-item">
-              <a class="link work-list-link" href="">
-                <div class="image-wrapper">
-                  <img
-                    class="work-photo"
-                    src="./images/work-samples/laptop.jpg"
-                    alt="разрабатывает приложение на лаптопе"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="work-list-description">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-
-                <div class="work-card">
-                  <h3 lang="en" class="work-name">Growing Business</h3>
-                  <p class="work-type">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+                  <div class="work-card">
+                    <h3 lang="en" class="work-name">Growing Business</h3>
+                    <p class="work-type">Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -389,5 +373,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

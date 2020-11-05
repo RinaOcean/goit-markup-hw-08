@@ -389,11 +389,8 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-  .navigation-list-item:first-child {
-    margin-bottom: 52px;
-  }
-  .navigation-list-item:last-child {
-    margin-top: 40px;
+  .navigation-list-item:not(last-child) {
+    margin-bottom: 46px;
   }
 }
 
@@ -783,6 +780,7 @@ h3 {
 }
 
 .page-header {
+  z-index: 100;
   position: relative;
   border-bottom: 1px solid #ececec;
   padding-top: 10px;

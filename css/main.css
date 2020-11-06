@@ -680,8 +680,7 @@ h3 {
     font-size: 14px;
     line-height: 1.71429;
     letter-spacing: 0.03em;
-    padding: 0 12px;
-    text-align: end;
+    padding-left: 12px;
   }
 }
 

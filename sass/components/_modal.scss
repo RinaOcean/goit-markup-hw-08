@@ -177,8 +177,7 @@
 
     @media screen and (min-width: 1200px) {
       @include font(400, 14px, 24px, 0.03em);
-      padding: 0 12px;
-      text-align: end;
+      padding-left: 12px;
     }
   }
 }

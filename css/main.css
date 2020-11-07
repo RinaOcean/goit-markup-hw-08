@@ -1136,11 +1136,9 @@ h3 {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .staff-photo {
-    display: inline;
-    width: 100%;
-  }
+.staff-photo {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {

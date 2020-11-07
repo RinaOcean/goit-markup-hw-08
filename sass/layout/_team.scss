@@ -20,10 +20,8 @@
   }
 
   &-photo {
-    @media screen and (max-width: 767px) {
-      display: inline;
-      width: 100%;
-    }
+    width: 100%;
+    height: 100%;
   }
 }
 

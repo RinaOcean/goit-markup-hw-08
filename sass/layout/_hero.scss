@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .hero {
     background-image: $gradient, url("../images/hero/mobile/hero-480-1.jpg");
 
@@ -40,7 +40,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-image: $gradient, url("../images/hero/tablet/hero-768-1.jpg");
 
@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: $gradient, url("../images/hero/descktop/hero-1200-1.jpg");
 

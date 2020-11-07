@@ -69,6 +69,12 @@
   border-color: #eeeeee;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list-item:first-child .work-card {
+    height: 167px;
+  }
+}
+
 .work-list-link {
   @extend %transition;
 

@@ -912,6 +912,12 @@ h3 {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-title {
+    max-width: 220px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-title {
     width: 696px;

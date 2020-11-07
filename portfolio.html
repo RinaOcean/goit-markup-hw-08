@@ -752,8 +752,8 @@
     <!--FOOTER-->
 
     <footer class="footer">
-      <section class="footer-container">
-        <h2 hidden>Adress</h2>
+      <section class="footer-section">
+        <h2 class="visually-hidden">Adress</h2>
 
         <div class="container">
           <div class="footer-nav">
@@ -790,7 +790,7 @@
 
             <ul class="social-media list">
               <li class="social-media-item">
-                <a class="social-media-link link" href="">
+                <a class="social-media-link link" aria-label="instagram" href="https://www.instagram.com">
                   <svg class="social-media-icons insta">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
@@ -798,7 +798,7 @@
               </li>
 
               <li class="social-media-item">
-                <a class="social-media-link link" href="">
+                <a class="social-media-link link" aria-label="twitter" href="https://www.twitter.com">
                   <svg class="social-media-icons twitter">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
@@ -806,7 +806,7 @@
               </li>
 
               <li class="social-media-item">
-                <a class="social-media-link link" href="">
+                <a class="social-media-link link" aria-label="facebook" href="https://www.facebook.com">
                   <svg class="social-media-icons fb">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
@@ -814,7 +814,7 @@
               </li>
 
               <li class="social-media-item">
-                <a class="social-media-link link" href="">
+                <a class="social-media-link link" aria-label="linkedin" href="https://www.linkedin.com">
                   <svg class="social-media-icons linkedin">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -826,7 +826,9 @@
           <div class="form-wraper">
             <h2 class="title">Подпишитесь на рассылку</h2>
             <form action="#" method="GET" class="subscribe-form">
-              <input type="email" class="subscribe-form-input" placeholder="E-mail" />
+              <label for="e-mail"></label>
+              <input id="e-mail" type="email" class="subscribe-form-input" placeholder="E-mail" />
+
               <button type="submit" class="subscribe-button">Подписаться</button>
             </form>
           </div>
@@ -834,7 +836,6 @@
       </section>
     </footer>
 
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

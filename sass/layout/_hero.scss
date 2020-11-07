@@ -2,10 +2,9 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-
+  background-image: $gradient, url("../images/hero/mobile/hero-480-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -28,10 +27,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero {
-    background-image: $gradient, url("../images/hero/mobile/hero-480-1.jpg");
-
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -40,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: $gradient, url("../images/hero/tablet/hero-768-1.jpg");
 
@@ -52,7 +49,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: $gradient, url("../images/hero/descktop/hero-1200-1.jpg");
 
